@@ -124,6 +124,13 @@ main {
   text-align: center;
 }
 
+@media (max-width: 840px) {
+  main {
+    font-size: 32px;
+    margin: 24px;
+  }
+}
+
 main p {
   font-weight: 400;
   font-size: 20px;
@@ -134,8 +141,16 @@ main p {
 h1 {
   font-weight: 300;
   font-size: 48px;
+  line-height: 1.4;
   color: #969696;
   padding-bottom: 16px;
+}
+
+@media (max-width: 840px) {
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
 }
 
 strong {
@@ -146,6 +161,12 @@ main > img {
   max-width: 640px;
   margin: 0 auto;
   padding-bottom: 60px;
+}
+
+@media (max-width: 840px) {
+  main > img {
+    max-width: 100%;
+  }
 }
 
 form {
@@ -166,6 +187,13 @@ form button {
 form button:hover {
   transition: all 0.6s ease;
   background-color: #1f5aef;
+}
+
+@media (max-width: 840px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 input[type="email"] {
@@ -195,6 +223,13 @@ button {
   border-radius: 50px;
 }
 
+@media (max-width: 840px) {
+  input,
+  button {
+    font-size: 20px;
+  }
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -215,6 +250,7 @@ button {
 }
 
 footer {
+  font-size: 16px;
   color: #969696;
   padding-bottom: 20px;
 }
