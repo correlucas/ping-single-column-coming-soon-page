@@ -12,3 +12,16 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+@mixin container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@mixin border-radius {
+  border-radius: 50px;
+}
+
+@mixin transition {
+  transition: all 0.6s ease;
+}
